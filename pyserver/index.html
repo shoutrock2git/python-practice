@@ -1,0 +1,26 @@
+<html>
+<body>
+Python is awesome!
+<!--
+<a href="cgi-bin\f13form.py">f13form</a>
+<a href="cgi-bin\find13f.py?year=3000">find13f</a>
+ -->
+<a href="cgi-bin\formTest.py">formTest</a>
+
+<form method="POST" action="/cgi-bin\formTest.py">
+<p><input type="radio" value="part_a" name="choise_pattern">パターンA</p>
+<p><input type="radio" value="part_b" name="choise_pattern">パターンB</p>
+<p><input type="radio" value="part_c" name="choise_pattern">パターンC</p>
+<input type="submit" value="submit" name="button">
+</form>
+
+
+<form method="POST" action="/cgi-bin\textarea.py">
+<p>幅と高さを指定<br>
+<textarea name="example1" cols="30" rows="5"></textarea>
+</p>
+<p><input type="submit" value="送信する"></p>
+</form>
+
+</body>
+</html>
