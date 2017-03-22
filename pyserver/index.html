@@ -1,11 +1,29 @@
 <html>
+
+<head>
+<script type="text/javascript" src="js/jquery-3.2.0.min.js"></script>
+<script type="text/javascript" src="js/sample.js"></script>
+</head>
+
 <body>
-Python is awesome!
+Python is awesome!</p>
+<!-- <p id="test"><a href="javascript:;">ココ</a></p>
+<script>
+  $(function(){
+    $('p').click(function () {
+      $(this).text("クリックされました");
+    });
+  });
+</script> -->
+
 <!--
 <a href="cgi-bin\f13form.py">f13form</a>
 <a href="cgi-bin\find13f.py?year=3000">find13f</a>
  -->
+
 <a href="cgi-bin\formTest.py">formTest</a>
+<a href="jstest.js">jsTest</a>
+
 
 <form method="POST" action="/cgi-bin\formTest.py">
 <p><input type="radio" value="part_a" name="choise_pattern">パターンA</p>
@@ -21,6 +39,8 @@ Python is awesome!
 </p>
 <p><input type="submit" value="送信する"></p>
 </form>
+
+
 
 </body>
 </html>
