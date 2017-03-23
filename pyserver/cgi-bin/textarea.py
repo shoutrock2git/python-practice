@@ -8,27 +8,6 @@ form = cgi.FieldStorage()
 textText = form.getvalue("example1")
 
 
-html_body="""
-<html><meta charset="utf-8">
-<head>
-<script type="text/javascript" src="js/jquery-3.2.0.min.js"></script>
-<script type="text/javascript" src="js/sample.js"></script>
-</head>
-
-<body>
-Python is awesome!</p>
-<p id="test"><a href="javascript:;">here</a></p>
-<p>
-<script>
-  $(function(){
-    $('p').click(function () {
-      $(this).text("yeah!!!!!!");
-    });
-  });
-</script></p>
-
-</body></html>"""
-
 #print("Content-Type:text/html\n\n")
 print ("Content-type: text/html; charset=utf-8\n")
 listT = []
@@ -42,5 +21,26 @@ for token in t.tokenize(textText):
     print("</p>")
 
 
-
-print (html_body)
+#
+# print("""<html><meta charset="utf-8">""")
+# print("<html>")
+#
+# print("<head>")
+# print("""<script type="text/javascript" src="js/jquery-3.2.0.min.js">""","</script>")
+# print("""<script type="text/javascript" src="js/sample.js">""")
+# print("</script>")
+# print("</head>")
+#
+# print("<body>")
+#
+# print("""<p id="test"><a href="javascript:;">here</a></p>""")
+# print("<script>")
+# print("""
+# $(function(){
+#     $('p').click(function () {
+#         $(this).text("yeah!!!!!!");
+#     });
+# });
+# """)
+# print("</script>")
+# print("</body></html>")
